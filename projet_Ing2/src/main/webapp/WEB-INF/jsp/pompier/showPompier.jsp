@@ -1,9 +1,3 @@
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
-<%@ page contentType="text/html;charset=UTF-8" language="java"%>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -69,7 +63,7 @@
 		</div>		
 
 		<div class="row">
-			<label class="col-sm-2">PrÃ©nom</label>
+			<label class="col-sm-2">Prénom</label>
 			<div class="col-sm-10">${pompierToShow.prenomPompier}</div>
 		</div>
 

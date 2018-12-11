@@ -1,9 +1,3 @@
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
-<%@ page contentType="text/html;charset=UTF-8" language="java"%>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -75,7 +69,7 @@
 			<div class="alert alert-${typeAlert} alert-dismissible" role="alert">
 				<button type="button" class="close" data-dismiss="alert"
 					aria-label="Close">
-					<span aria-hidden="true">Ã—</span>
+					<span aria-hidden="true">×</span>
 				</button>
 				<strong>${msgAlert}</strong>
 			</div>
@@ -85,8 +79,8 @@
  <c:choose>  <%-- Debut c:choose  --%>
 		<c:when test="${empty missions}">
 			<div class="alert alert-warning alert-dismissible" role="alert">
-				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">Ã—</span></button>
-				<strong>Aucune mission trouvÃ©e ! La liste des missions est vide !</strong>
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+				<strong>Aucune mission trouvée ! La liste des missions est vide !</strong>
 			</div>
 		</c:when>
 		
@@ -172,8 +166,8 @@
 			    	<h4> <span class="glyphicon  glyphicon-trash"></span> Confirmer Suppresion</h4>
 		        </div>
 		        <div class="modal-body">
-			       <h3>ÃŠtes-vous sÃ»r de vouloir supprimer dÃ©finitivement cette mission ?
-			         <br><br><small>NB: Cette opÃ©ration est irrÃ©versible !</small>
+			       <h3>Êtes-vous sûr de vouloir supprimer définitivement cette mission ?
+			         <br><br><small>NB: Cette opération est irréversible !</small>
 			        </h3>
 		        </div>
 		        <div class="modal-footer">
@@ -199,9 +193,9 @@
 			    	<h4> <span class="glyphicon  glyphicon-trash"></span> Confirmer Vidage</h4>
 		        </div>
 		        <div class="modal-body">
-			       <h3>ÃŠtes-vous sÃ»r de vouloir vider la liste de toutes les missions ? 
-			      	 <br><small>Ce vidage engendrer systÃ©matiquement la suppression de toutes ses commandes!</small>
-			      	 <br><br><small>NB: Cette opÃ©ration est irrÃ©versible !</small>
+			       <h3>Êtes-vous sûr de vouloir vider la liste de toutes les missions ? 
+			      	 <br><small>Ce vidage engendrer systématiquement la suppression de toutes ses commandes!</small>
+			      	 <br><br><small>NB: Cette opération est irréversible !</small>
 			      	 
 				   </h3>
 		        </div>
@@ -246,7 +240,7 @@ $('#prodtable').DataTable( {
         infoPostFix:    "",
         loadingRecords: "Chargement en cours...",
         zeroRecords:    "Aucun &eacute;l&eacute;ment &agrave; afficher",
-        emptyTable:     "Aucune donnÃ©e disponible dans le tableau",
+        emptyTable:     "Aucune donnée disponible dans le tableau",
         paginate: {
             first:      "Premier",
             previous:   "Pr&eacute;c&eacute;dent",
@@ -255,7 +249,7 @@ $('#prodtable').DataTable( {
         },
         aria: {
             sortAscending:  ": activer pour trier la colonne par ordre croissant",
-            sortDescending: ": activer pour trier la colonne par ordre dÃ©croissant"
+            sortDescending: ": activer pour trier la colonne par ordre décroissant"
         }
     }
 } );

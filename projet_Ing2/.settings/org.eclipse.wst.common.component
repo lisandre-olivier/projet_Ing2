@@ -6,6 +6,6 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
         <property name="java-output-path" value="/MonProjectSpringBootData/target/classes"/>
-        <property name="context-root" value="projet_Ing2"/>
+        <property name="context-root" value="MonProjectSpringBootData"/>
     </wb-module>
 </project-modules>
